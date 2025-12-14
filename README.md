@@ -1,38 +1,23 @@
-# sv
+**ECportfolio**, a platform designed to simulate a simple e-commerce.
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+![imagen](https://github.com/user-attachments/assets/9aab8718-55dd-469a-8c35-7b4b3156ef1b)
 
-## Creating a project
+![imagen](https://github.com/user-attachments/assets/2586ccc4-538a-4f97-bcea-429d00b1cfb7)
 
-If you're seeing this, you've probably already done this step. Congrats!
+![imagen](https://github.com/user-attachments/assets/0c544ce3-e82a-4676-b977-397942c2f589)
 
-```sh
-# create a new project in the current directory
-npx sv create
 
-# create a new project in my-app
-npx sv create my-app
-```
+**Guide:
 
-## Developing
+Front-end:
+**
+npm i => install dependencies
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+npm run dev => static front-end data loaded / not persistent data (example:F5 restarts data)
 
-```sh
-npm run dev
+npm run database => comunicate with backend for data (init backend first)
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+**Back-end**
 
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+(normal configuration for a laravel project)
+php artisan serve => running backend
