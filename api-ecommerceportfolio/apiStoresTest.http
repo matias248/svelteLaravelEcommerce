@@ -1,0 +1,50 @@
+@token=a@a.com12
+
+### Get all stores
+GET http://localhost:8000/api/stores/
+
+### Get all stores filtered by  a text
+GET http://localhost:8000/api/stores?textfilter=31000
+
+
+### Get by id
+GET http://localhost:8000/api/stores/1
+
+
+
+### Create a store
+POST http://localhost:8000/api/stores
+Content-Type: application/json
+
+{
+      "name": "Toulouse store3",
+      "currency": "EUR",
+      "address": {
+        "streetNumber": "0",
+        "streetName": "Street Name",
+        "city": "City",
+        "state": "State",
+        "zipCode": "31000"
+      },
+      "location": {
+        "latitude": 1,
+        "longitude": 2
+      },
+      "contactPhone": "+33 123456",
+      "products": [],
+      "imageUrl": "https://img.freepik.com/vector-premium/fachada-tienda-plana-toldo_23-2147542588.jpg"
+}
+
+### Update a store
+PATCH http://localhost:8000/api/stores/1
+Content-Type: application/json
+
+
+{
+    "id":"name change",
+}
+
+### Delete a store
+DELETE http://localhost:8000/api/stores/5
+
+

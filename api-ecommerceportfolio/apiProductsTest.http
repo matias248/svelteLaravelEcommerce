@@ -1,0 +1,57 @@
+@token=a@a.com12
+
+### Get all products
+GET http://localhost:8000/api/products/public?categories=ACcessories,la
+
+
+### Get all products with filter text
+GET http://localhost:8000/api/products/public?storeid=5
+
+### Get all products with store filter
+GET http://localhost:8000/api/products/public?textfilter=Product
+
+####
+GET http://localhost:8000/api/products/public?page=1&pagelength=1000
+
+### Follow requests filter by store
+
+### Get all products
+GET http://localhost:8000/api/stores/6/products
+
+
+### Get by id
+GET http://localhost:8000/api/stores/6/products/16?storedata=true
+
+
+
+### Create a product
+POST http://localhost:8000/api/stores/6/products
+Content-Type: application/json
+
+{
+			"imageUrll":"j",
+			"code": "f230fh0g3",
+			"name": "Bamboo Watch",
+			"description": "Product Description",
+			"image": "bamboo-watch.jpg",
+			"price": 65,
+			"category": "Accessories",
+			"quantity": 24,
+			"inventoryStatus": "OUTOFSTOCK",
+			"rating": 5,
+			"currency":"€"
+}
+
+### Update a product
+PATCH  http://localhost:8000/api/stores/5/products/10
+Content-Type: application/json
+
+{
+    "name":"name changed",
+	"price":8,
+	"store_id":"1"
+}
+
+### Delete a product
+DELETE http://localhost:8000/api/stores/3/products/1
+
