@@ -1,0 +1,1 @@
+import{f as o,a as i}from"./BmDDdK99.js";import"./BQwqAryc.js";var r=o(`<div id="itemNotFound" class="flex flex-col gap-8 justify-center items-center h-screen dark:text-white">The item was not found or it doesn't exist.</div>`);function n(t){var e=r();i(t,e)}export{n as D};
