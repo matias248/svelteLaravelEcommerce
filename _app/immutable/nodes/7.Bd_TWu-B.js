@@ -1,0 +1,1 @@
+import"../chunks/BmDDdK99.js";import{p as s,a as i,g as t,d as r}from"../chunks/Dt8JWdLj.js";import{S as m}from"../chunks/-UZCTcdQ.js";import{p as d}from"../chunks/6D1jC-Ry.js";function c(e,o){s(o,!0);const p=r(()=>()=>d.params.id);{let a=r(()=>t(p)());m(e,{get id(){return t(a)},title:"Edit the store"})}i()}export{c as component};
